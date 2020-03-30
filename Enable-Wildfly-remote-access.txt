@@ -1,0 +1,24 @@
+Para lograr acceder a los servicios de forma remota
+buscamos el archivo  standalone.xml y con cualquier editor de su conveniencia
+en mi caso uso sublimetext modificamos la parte, para poder encontrarlo con facilidad 
+con find buscamos interface
+
+<interface name="management">
+	<inet-address value="${jboss.bind.address.management:127.0.0.1}"/>
+</interface>
+<interface name="public">
+	<inet-address value="${jboss.bind.address:0.0.0.0}"/>
+</interface>
+
+
+
+por la siguiente
+
+
+
+<interface name="management">
+	<any-address/>
+</interface>
+<interface name="public">
+	<any-address/>
+</interface>
