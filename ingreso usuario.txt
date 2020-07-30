@@ -1,0 +1,1 @@
+INSERT INTO public.tbl_persona(per_apellido, per_fecha_nacimiento, per_nombre, login_persona_fk,persona_persona_fk, rol_persona_fk)VALUES ('Llanes Coronel', '4/28/1991', 'John Alfredo', 1,null, 1);
