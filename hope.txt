@@ -1,0 +1,18 @@
+ <datasource jta="true" jndi-name="java:jboss/datasources/HopeV1" pool-name="HopeV1" enabled="true" use-java-context="true" use-ccm="true">
+                    <connection-url>jdbc:postgresql://localhost:5432/HopeV1</connection-url>
+                    <driver>postgresql-driver</driver>
+                    <security>
+                        <user-name>postgres</user-name>
+                        <password>admin</password>
+                    </security>
+                </datasource>
+                <drivers>
+                    <driver name="h2" module="com.h2database.h2">
+                        <xa-datasource-class>org.h2.jdbcx.JdbcDataSource</xa-datasource-class>
+                    </driver>
+                    <driver name="postgresql-driver" module="org.postgresql">
+                        <driver-class>org.postgresql.Driver</driver-class>
+                    </driver>
+                </drivers>
+
+
